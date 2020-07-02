@@ -1,8 +1,12 @@
-package gobot
+package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/okatotomato/gobot/models/user"
+)
 
 func main() {
 	fmt.Println("GoBot Dziolcha v.01")
-
+	u := user.User{}
+	fmt.Println(u.GetTableName())
 }
